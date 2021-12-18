@@ -23,7 +23,7 @@ class TestCog(slash_util.ApplicationCog):
                 description="This is page 4"
             ),
         ]
-        await ctx.send(embed=embeds[0], view=Paginator(embeds))
+        await ctx.send(embed=embeds[0], view=Paginator(embeds), ephemeral=True)
 
     @commands.command()
     async def pagination(self, ctx: discord.ext.commands.Context):
