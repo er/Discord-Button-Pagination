@@ -8,7 +8,7 @@ from utils.pagination import Paginator
 class TestCog(slash_util.ApplicationCog):
 
     @slash_util.slash_command()
-    async def pagination(self, ctx: slash_util.Context):
+    async def slashpagination(self, ctx: slash_util.Context):
         embeds = [
             discord.Embed(
                 description="This is page 1"
